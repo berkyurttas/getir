@@ -1,0 +1,26 @@
+{
+  "name": "getir",
+  "version": "1.0.0",
+  "description": "Getir Assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=test jest --watchAll --verbose --runInBand",
+    "start": "node server.js"
+  },
+  "author": "Berk Yurttaş",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "isodate": "^0.1.4",
+    "jest": "^25.1.0",
+    "mongojs": "^3.1.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
