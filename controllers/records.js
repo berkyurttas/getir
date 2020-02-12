@@ -49,7 +49,6 @@ router.post('/', validationArr, function(req, res) {
         return res.status(422).json({ "code": 422, "msg": msg, records:[] })
     }
 
-    if(req.body)
     Record.get(req.body, function(err, records){
         if(err){
             return res.status(500).json(err)
